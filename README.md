@@ -1,4 +1,4 @@
-# my notes app
+# MY NOTES APP
 
 
 ### About  
