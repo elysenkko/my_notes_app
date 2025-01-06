@@ -46,9 +46,9 @@ Enable CGI support on your web server:
 sudo a2enmod cgi  
 sudo systemctl restart apache2  
 ```  
-Move the Bash scripts (`create_note.sh`, `delete_note.sh`, `notes_page.sh`) to the `/usr/lib/cgi-bin/` directory and set executable permissions:  
+Move the Bash scripts (`create_note.sh`, `delete_note.sh`, `notes_page.sh`) to the `/usr/lib/cgi-bin/my_notes_app/` directory and set executable permissions:  
 ```bash  
-sudo chmod +x /usr/lib/cgi-bin/*.sh  
+sudo chmod +x /usr/lib/cgi-bin/my_notes_app/*.sh  
 ```  
 
 #### 4. **Run the Application**  
