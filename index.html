@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes App</title>
+</head>
+<body>
+    <!-- Main container -->
+    <div style="max-width: 600px; margin: auto; text-align: center; font-family: Arial, sans-serif; line-height: 1.6;">
+
+        <!-- Application header -->
+        <header style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+            <h1 style="color: #333;">Welcome to My Notes App</h1>
+            <p style="color: #555;">Save and manage your notes efficiently!</p>
+        </header>
+
+        <!-- Form to create a new note -->
+        <section style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 20px;">
+            <h2 style="color: #333;">Create a New Note</h2>
+            <form action="/cgi-bin/my_notes_app/create_note.sh" method="post">
+                <label for="note" style="display: block; margin-bottom: 10px; font-weight: bold;">Enter your note:</label>
+                <input 
+                    type="text" 
+                    id="note" 
+                    name="note" 
+                    placeholder="Type your note here" 
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <button type="submit" style="padding: 10px 20px; background-color: #5cb85c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    Save Note
+                </button>
+            </form>
+        </section>
+
+        <!-- Navigation to view and manage notes -->
+        <section style="background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
+            <h2 style="color: #333;">Manage Your Notes</h2>
+            <form action="/cgi-bin/my_notes_app/notes_page.sh" method="get">
+                <button type="submit" style="padding: 10px 20px; background-color: #0275d8; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View and Manage Notes
+                </button>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
